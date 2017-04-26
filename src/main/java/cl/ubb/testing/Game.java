@@ -1,11 +1,13 @@
 package cl.ubb.testing;
 
 public class Game {
+	int score = 0;
 	public void roll(int pins){
+		score += pins;
 	}
 	
 	public int score(){
-		return 8;
+		return score;
 	}
 }
 
